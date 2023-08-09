@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        ColorDialog ColorDialog1;
+        ColorDialog colorDialog1;
         OpenFileDialog openFileDialog1;
         public Form1()
         {
@@ -43,10 +43,10 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(ColorDialog1.ShowDialog()==DialogResult.OK)
-            {
-                pictureBox1.BackColor = ColorDialog1.Color;
-            }
+            if(colorDialog1.ShowDialog()==DialogResult.OK)
+            
+                pictureBox1.BackColor = colorDialog1.Color;
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
